@@ -1,0 +1,89 @@
+.task-item {
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .task-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .task-item h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .task-item p {
+    margin: 5px 0 10px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .task-item.completed {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+  }
+  
+  .task-item.completed h3,
+  .task-item.completed p {
+    text-decoration: line-through;
+    color: #6c757d;
+  }
+  
+  .task-item .btn {
+    border: none;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .task-item .btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .task-item .btn-edit {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  .task-item .btn-edit:hover {
+    background-color: #e0a800;
+  }
+  
+  .task-item .btn-delete {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .task-item .btn-delete:hover {
+    background-color: #c82333;
+  }
+  
+  .task-item .btn-complete {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .task-item .btn-complete:hover {
+    background-color: #218838;
+  }
+  
+  .task-item .btn-pending {
+    background-color: #17a2b8;
+    color: white;
+  }
+  
+  .task-item .btn-pending:hover {
+    background-color: #138496;
+  }
+  
